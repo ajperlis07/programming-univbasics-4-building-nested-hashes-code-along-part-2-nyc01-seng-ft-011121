@@ -22,8 +22,7 @@ def update_status
 
   epic_tragedy[:montague][:hero][:status] = "dead"
   epic_tragedy[:capulet][:heroine][:status] = "dead"
-  epic_tragedy[:additional_characters][0] = { name: "Prince Escalus" }
-epic_tragedy[:additional_characters][1] = { name: "Apothecary" }
+  
 
 
 
@@ -54,19 +53,7 @@ def add_characters
       }
    }
 
-   # Write code below that does the following programmatically:
-   #
-   # - Add an additional :additional_characters key to epic_tragedy and assign it an array as its value
-   # - Add two hashes to this array, both with a :name key.
-   #   - The first hash should have the :name key set to "Prince Escalus" 
-   #   - The second hash should have the :name key set to "Apothecary" 
-   # Code your solution here:
-
-
-
-
-
-
-   # After your code, the following line will return the altered hash
+   epic_tragedy[:additional_characters][0] = { name: "Prince Escalus" }
+epic_tragedy[:additional_characters][1] = { name: "Apothecary" }
    epic_tragedy
 end
